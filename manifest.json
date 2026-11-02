@@ -1,0 +1,26 @@
+
+{
+  "name": "The Lazy Billionaire: Idle Trading Tycoon",
+  "short_name": "LazyBillionaire",
+  "description": "High-stakes idle business simulation and stock trading tycoon game.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "categories": ["games", "simulation", "finance"],
+  "icons": [
+    {
+      "src": "/assets/icons/1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

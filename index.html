@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="The Lazy Billionaire - Idle trading tycoon & realistic business simulation game. Build empires, trade stocks on margin, and dominate the global markets.">
+  <meta property="og:title" content="The Lazy Billionaire: Idle Trading Tycoon">
+  <meta property="og:description" content="Build empires, execute 51% hostile takeovers, and trade realistic markets in this high-stakes tycoon game.">
+  <meta property="og:image" content="/assets/icons/1.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Lazy Billionaire: Idle Trading Tycoon">
+  <meta name="twitter:description" content="Idle money fantasy & realistic stock market simulator.">
+  <meta name="twitter:image" content="/assets/icons/1.png">
+  <link rel="icon" type="image/png" href="/assets/icons/1.png">
+  <link rel="apple-touch-icon" href="/assets/icons/1.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>The Lazy Billionaire: Idle Trading Tycoon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --safe-area-inset-top: env(safe-area-inset-top);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      overscroll-behavior: none; /* Prevents pull-to-refresh on Android */
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #050505;
+      color: #ffffff;
+      position: fixed;
+      user-select: none;
+      -webkit-user-select: none; /* Disable text selection */
+      -webkit-touch-callout: none; /* Disable long-press menu */
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+    #root {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .font-bebas {
+      font-family: 'Bebas Neue', cursive;
+    }
+    .money-text {
+      background: linear-gradient(to bottom, #ffffff 0%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.2));
+    }
+    /* Hide scrollbar but allow scrolling */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .animate-pulse-slow {
+      animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .7; transform: scale(1.05); }
+    }
+    
+    .mask-fade-right {
+      mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    }
+
+    input::placeholder {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: #3f3f46;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <title>Privacy Policy & Account Deletion — The Lazy Billionaire</title>
+  <meta name="description" content="Official Privacy Policy and Account Deletion Instructions for The Lazy Billionaire (Lunar Paradox).">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://products.lunarparadox.com/the-lazy-billionaire/privacy.html">
+  <link rel="icon" type="image/png" href="./assets/icons/1.png">
+  <style>
+    :root { color-scheme: dark; --bg: #050505; --card: #0d0f17; --border: #ffffff18; --text: #f7f7f7; --muted: #95939e; --accent: #f59e0b; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; padding: 40px 24px 80px; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; }
+    .header { margin-bottom: 48px; border-bottom: 1px solid var(--border); padding-bottom: 24px; display: flex; justify-content: space-between; align-items: baseline; }
+    .brand { font-size: 15px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); text-decoration: none; }
+    .brand:hover { opacity: 0.8; }
+    .date { font-family: monospace; font-size: 12px; color: var(--muted); }
+    h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 16px; color: #fff; }
+    .summary { font-size: 16px; line-height: 1.6; color: var(--muted); margin-bottom: 40px; }
+    section { margin-bottom: 36px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+    h2 { font-size: 18px; font-weight: 600; margin-bottom: 14px; color: #fff; letter-spacing: -0.01em; display: flex; align-items: center; gap: 8px; }
+    h2::before { content: "//"; color: var(--accent); font-family: monospace; font-size: 14px; }
+    p { margin-bottom: 14px; color: #c4c2cb; font-size: 14px; }
+    p:last-child { margin-bottom: 0; }
+    ul { list-style: square; padding-left: 20px; color: #c4c2cb; font-size: 14px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    code { font-family: monospace; font-size: 13px; background: #ffffff0d; padding: 2px 6px; border-radius: 4px; color: #f59e0b; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #fff; }
+    .highlight-box { background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 8px; padding: 18px; margin-top: 14px; }
+    .footer { margin-top: 60px; text-align: center; font-size: 12px; color: var(--muted); font-family: monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="https://products.lunarparadox.com/the-lazy-billionaire" class="brand">The Lazy Billionaire</a>
+      <span class="date">UPDATED: OCTOBER 2026</span>
+    </header>
+
+    <main>
+      <h1>Privacy Policy & Account Deletion</h1>
+      <p class="summary">
+        This document outlines the privacy commitments, data collection policies, and account deletion procedures for <strong>The Lazy Billionaire: Idle Trading Tycoon</strong>, published by Lunar Paradox.
+      </p>
+
+      <section>
+        <h2>1. Data Collection & Usage</h2>
+        <p><strong>The Lazy Billionaire</strong> is designed primarily as an offline-first single-player simulation game. We collect only minimal telemetry and save state data necessary for optional multiplayer leaderboards and cloud sync:</p>
+        <ul>
+          <li><strong>Guest Mode:</strong> In Guest Mode, 100% of game progression (money, assets, portfolio, rank) is saved solely within your local device's encrypted IndexedDB / LocalStorage storage. No personal data is sent to our servers.</li>
+          <li><strong>Cloud Accounts (Optional):</strong> If you link Google Sign-In or Firebase Authentication, we store your anonymous User ID, display name, avatar choice, and game save state (total net worth, diamond balance) on Google Cloud Firestore.</li>
+          <li><strong>In-App Purchases:</strong> Real-money transactions for diamond bundles are processed directly through Google Play Billing. We never receive or store your credit card or billing details.</li>
+        </ul>
+      </section>
+
+      <section id="delete-account">
+        <h2>2. Account & Data Deletion (Google Play Compliance)</h2>
+        <p>In full compliance with Google Play's User Data policy on Account Deletion, players have complete control to permanently delete their account and all associated cloud data at any time.</p>
+        
+        <div class="highlight-box">
+          <p><strong>Option A: Instant In-App Deletion</strong></p>
+          <p>1. Open the game on your device.<br>
+          2. Tap the <strong>Status / Profile</strong> tab in the bottom navigation.<br>
+          3. Tap <strong>Settings / Disconnect</strong> &rarr; tap <strong>Reset Data / Delete Cloud Account</strong>.<br>
+          4. Confirm deletion. Your Firestore document, save hashes, leaderboard rank, and local save files are immediately and permanently erased.</p>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 16px;">
+          <p><strong>Option B: Web Deletion Request</strong></p>
+          <p>If you have uninstalled the app or wish to request manual cloud data erasure, send an email to:</p>
+          <p style="margin-top: 6px;"><a href="mailto:privacy@lunarparadox.com"><strong>privacy@lunarparadox.com</strong></a> with the subject <code>[The Lazy Billionaire Data Deletion Request]</code> and include your in-game User ID (or associated Google account email).</p>
+          <p style="margin-top: 6px; font-size: 13px; color: var(--muted);">All requests are processed and confirmed within 7 business days, resulting in complete removal from Google Cloud Firestore backups.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Children's Privacy</h2>
+        <p>Our game does not knowingly collect personal identifiable information from children under the age of 13. All gameplay mechanisms utilize fictional currencies.</p>
+      </section>
+
+      <section>
+        <h2>4. Contact Information</h2>
+        <p>For inquiries, support, or privacy concerns, contact:</p>
+        <ul>
+          <li><strong>Developer:</strong> Lunar Paradox</li>
+          <li><strong>Website:</strong> <a href="https://products.lunarparadox.com">products.lunarparadox.com</a></li>
+          <li><strong>Support Email:</strong> <a href="mailto:support@lunarparadox.com">support@lunarparadox.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © 2026 Lunar Paradox. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

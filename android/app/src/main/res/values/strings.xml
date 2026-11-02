@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">The Lazy Billionaire</string>
+    <string name="title_activity_main">The Lazy Billionaire</string>
+    <string name="package_name">com.frozenflame.lazybillionaire</string>
+    <string name="custom_url_scheme">com.frozenflame.lazybillionaire</string>
+</resources>
